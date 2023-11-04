@@ -1,0 +1,70 @@
+.what-we {
+  background: url("../../../assets/whatwe.webp") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.what-we-overlay {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+}
+.what-we-content {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 8rem 0 5rem 0;
+  font-family: "Roboto", sans-serif;
+  z-index: 4;
+}
+.what-we h1 {
+  text-align: center;
+}
+.what-we-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.what-we-card {
+  box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1),
+    0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  background: white;
+  color: #272443;
+  margin-top: 2rem;
+}
+.what-we-card h3 {
+  font-size: 34px;
+  color: #da392b;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .what-we {
+    width: 100%;
+  }
+  .what-we-content {
+    padding: 3rem 0 3rem 0;
+
+    width: 100%;
+  }
+  .what-we h1 {
+    font-size: 30px;
+    padding-bottom: 0;
+  }
+  .what-we-cards {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+  .what-we-card {
+    text-align: center;
+  }
+  .what-we-card h3 {
+    font-size: 24px;
+    padding-bottom: 0.8rem;
+  }
+}

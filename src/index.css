@@ -1,0 +1,21 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --animate-duration: 800ms;
+  --animate-delay: 300ms;
+}
+body {
+  background: #f6f4f0;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

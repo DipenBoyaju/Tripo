@@ -1,0 +1,40 @@
+.game-banner {
+  /* background: url("../../../assets/kipon-bg.webp") no-repeat center; */
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 18rem;
+  height: 100vh;
+}
+.game-category {
+  width: 50%;
+  padding: 3.5rem;
+  background: white;
+  /* box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+     */
+  margin-top: -10rem;
+  box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
+  border-radius: 20px;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+}
+.game-banner .game-title {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.game-banner .game-title img {
+  border-radius: 25px;
+}
+.game-banner .game-title h5 {
+  padding: 0;
+  margin: 0;
+  padding-top: 1rem;
+}
+.game-banner .game-description h1 {
+  margin-top: 2rem;
+}
+.game-banner .game-description p {
+  color: #272443;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}

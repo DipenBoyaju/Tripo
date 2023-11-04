@@ -1,0 +1,32 @@
+.about-contents {
+  height: 90vh;
+}
+.about-contents {
+  display: flex;
+  overflow: hidden;
+  align-items: stretch;
+  height: 100%;
+}
+.about-image img {
+  height: 100%;
+  position: relative;
+}
+.about-info {
+  background: #da392b;
+  font-size: 18px;
+  color: white;
+  padding: 5rem 10rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .about-contents {
+    flex-direction: column;
+  }
+  .about-image img {
+    width: 100%;
+  }
+  .about-info {
+    padding: 3rem 1rem;
+  }
+}

@@ -1,0 +1,120 @@
+.exploregame {
+  padding-bottom: 10rem;
+}
+.games-list {
+  display: flex;
+  margin-top: -10rem;
+  gap: 30px;
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+  position: relative;
+  align-items: stretch;
+}
+.games-list .game-card {
+  flex: 1;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: rgba(218, 57, 43, 0.1) 7px 7px 10px;
+  animation-duration: 1s;
+}
+.games-list .game-card:hover .game-info {
+  display: none;
+  transition: ease 300ms;
+}
+.game-card .game-image img {
+  width: 100%;
+  transition: ease-in-out 300ms;
+}
+.games-list .game-card img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 300ms;
+  cursor: pointer;
+}
+.games-list .ex-game:hover {
+  background: #fcff72;
+  cursor: pointer;
+  transition: ease-in 300ms;
+}
+.games-list .ex-game:hover .exgame-info {
+  transform: scale(1.1);
+  transition: ease-in 300ms;
+}
+.game-card .game-info {
+  position: absolute;
+  margin-top: -5rem;
+  padding-left: 2rem;
+}
+.game-card .game-info h4 {
+  font-size: 21px;
+  color: #f6f4f0;
+  font-weight: 600;
+  line-height: 0.4;
+}
+.game-card .game-info p {
+  font-weight: 500;
+  color: #f6f4f0;
+  font-size: 15px;
+}
+.game-card:last-child {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 114, 1) 0%,
+    rgba(246, 126, 28, 1) 58%
+  );
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  transition: ease-in-out 300ms;
+}
+.game-card:last-child h4 {
+  color: #272443;
+  padding-top: 55%;
+  font-size: 24px;
+  font-weight: 600;
+  /* height: 350px; */
+}
+.game-card:last-child .arrow {
+  font-size: 26px;
+  font-weight: 6000;
+  color: #272443;
+}
+.exploregame-overlay {
+  width: 100%;
+  content: "";
+  height: 100%;
+  background: rgba(218, 57, 43, 0.3);
+  position: absolute;
+  transition: ease 300ms;
+}
+.games-list .game-card:hover .exploregame-overlay {
+  display: none;
+  transition: ease 300ms;
+}
+.game-card:first-child {
+  animation-delay: 0.5s;
+}
+.game-card:nth-child(2) {
+  animation-delay: 1s;
+}
+.game-card:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.game-card:last-child {
+  animation-delay: 2s;
+}
+
+@media screen and (max-width: 767px) {
+  .games-list {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .games-list .game-card {
+    width: 100%;
+  }
+  .game-card:last-child {
+    padding-bottom: 8rem;
+  }
+}

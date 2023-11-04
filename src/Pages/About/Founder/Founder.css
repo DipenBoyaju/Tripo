@@ -1,0 +1,84 @@
+.founder {
+  padding-bottom: 6rem;
+}
+.founder-content {
+  background: #272443;
+  padding: 5rem 0;
+}
+.founder h1 {
+  color: white;
+  text-align: center;
+}
+.founder-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem 6rem 0 6rem;
+  color: white;
+  text-align: center;
+}
+.founder-card {
+  position: relative;
+  z-index: 2;
+}
+.founder-card-overlay {
+  position: absolute;
+  content: "";
+  height: 73%;
+  width: 100%;
+  background: rgba(218, 57, 43, 0.2);
+  z-index: 2;
+  border-radius: 20px;
+  display: none;
+  transition: ease-in all 500ms;
+}
+.founder-list .founder-card img {
+  width: 100%;
+  border-radius: 20px;
+  transition: ease-in-out 800ms;
+}
+.founder-list .founder-img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.founder-list .founder-img:hover img {
+  transform: scale(1.1);
+  transition: ease-in-out 800ms;
+  cursor: pointer;
+}
+.founder-list .founder-img:hover .founder-card-overlay {
+  display: block;
+  transition: ease-in-out all 500ms;
+}
+.founder-card h6 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 1.5rem;
+}
+.founder-card p {
+  font-weight: 600;
+}
+.w-founder {
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+  .founder {
+    padding-bottom: 0;
+  }
+  .founder-content {
+    padding: 4rem 0;
+  }
+  .founder h1 {
+    font-size: 30px;
+    padding-bottom: 0;
+  }
+  .founder-list {
+    flex-direction: column;
+    padding: 3rem 1rem 0 1rem;
+  }
+  .founder .container {
+    padding: 0;
+  }
+}

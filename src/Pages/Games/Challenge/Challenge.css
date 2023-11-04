@@ -1,0 +1,34 @@
+.challenge {
+  display: flex;
+  /* background: url("../../../assets/kipon3.webp") no-repeat center; */
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.challenge-overlay {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(218, 57, 43, 0.7);
+}
+.challenge .challenge-content {
+  text-align: center;
+  width: 72%;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+}
+.challenge .challenge-content h1 {
+  color: white;
+}
+.challenge .challenge-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.challenge .challenge-content h5 {
+  color: white;
+}

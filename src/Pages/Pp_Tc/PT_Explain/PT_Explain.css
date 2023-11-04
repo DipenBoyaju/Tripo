@@ -1,0 +1,24 @@
+.ptexplain-content {
+  background: #da392b;
+  padding: 8rem 6rem;
+}
+.ptexplain-content p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  width: 72%;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .ptExplain .container {
+    padding: 0;
+  }
+  .ptexplain-content {
+    padding: 3rem 1rem;
+  }
+  .ptexplain-content p {
+    width: 100%;
+  }
+}

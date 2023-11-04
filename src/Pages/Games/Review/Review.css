@@ -1,0 +1,47 @@
+.review-title {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.review-title .rating {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.1);
+}
+.review-title .title h1 {
+  margin-top: 15px;
+  display: flex;
+}
+.review-title .rating > span {
+  font-family: "Roboto", sans-serif;
+  color: #272443;
+  background: #da392b;
+  color: white;
+  padding: 0.7rem 5px;
+  border-radius: 30px;
+}
+.review-title .rating .ricon {
+  font-size: 20px;
+  margin: 0 0.5rem 0 0.8rem;
+}
+.review-title .rating > span > span {
+  background: white;
+  color: #272443;
+  border-radius: 30px;
+  padding: 0.4rem 1.8rem;
+}
+.reviewcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5rem 0;
+  border: 1px solid #272443;
+}
+.reviewcontent .review-card {
+  padding: 5rem 4rem;
+  border: 1px solid #272443;
+}
+.reviewcontent .review-card p {
+  font-family: "Roboto", sans-serif;
+  color: #272443;
+}

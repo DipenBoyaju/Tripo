@@ -1,0 +1,75 @@
+.job-content {
+  background: #da392b;
+  padding: 5rem;
+  width: 1005;
+  font-family: "Roboto", sans-serif;
+}
+.job-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+.job-content h1 {
+  text-align: center;
+  color: white;
+}
+.job-image {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.job-card img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in-out 800ms;
+}
+.job-card img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 800ms;
+  overflow: hidden;
+}
+.job-card button {
+  background: #272443;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.job-card button:hover {
+  background: rgba(39, 36, 67, 0.9);
+}
+.job-card h5 {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+.job-card h6 {
+  color: white;
+  font-weight: normal;
+}
+.job-card p {
+  color: white;
+  font-weight: 18px;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .job-content {
+    padding: 2rem;
+  }
+  .job-opening .container {
+    padding: 0;
+  }
+  .job-content h1 {
+    font-size: 30px;
+  }
+  .job-list {
+    flex-direction: column;
+  }
+}

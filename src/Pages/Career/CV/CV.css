@@ -1,0 +1,53 @@
+.apply-content {
+  background: url("../../../assets/newsletter.webp") no-repeat center;
+  padding: 10rem 5rem;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.apply {
+  position: relative;
+}
+.apply-overlay {
+  position: absolute;
+  content: "";
+  background: rgba(39, 36, 67, 0.6);
+  height: 100%;
+  width: calc(83% - 3px);
+  z-index: 2;
+}
+.apply-content h1,
+.apply-content h5 {
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+.apply button {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  background: #fcff72;
+  color: #272443;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  position: relative;
+  z-index: 3;
+}
+.apply button:hover {
+  background: white;
+}
+
+@media screen and (max-width: 767px) {
+  .apply .container {
+    padding: 0;
+  }
+  .apply-content {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .apply-content h1 {
+    font-size: 30px;
+  }
+  .apply-overlay {
+    width: 100%;
+  }
+}

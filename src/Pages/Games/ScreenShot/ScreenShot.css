@@ -1,0 +1,29 @@
+.screenshot {
+  padding: 6rem 0;
+}
+.screenshot h3 {
+  font-size: 34px;
+  color: #272443;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.screenshot .shot-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3.5rem;
+  overflow: hidden;
+}
+.screenshot img {
+  width: 100%;
+  border-radius: 25px;
+  transition: ease-in-out all 800ms;
+}
+.screenshot .img {
+  overflow: hidden;
+  border-radius: 25px;
+}
+.screenshot img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out all 800ms;
+}

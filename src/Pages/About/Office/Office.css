@@ -1,0 +1,110 @@
+.office {
+  background: url("../../../assets//office.webp") no-repeat center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.office-overlay {
+  background: rgba(218, 57, 43, 0.65);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.office-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+  padding: 12rem 0;
+}
+.office-content .office-left {
+  color: white;
+  padding-left: 3rem;
+}
+.office-left h5,
+.office-left h1 {
+  color: white;
+}
+.office-left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  width: 395px;
+}
+.office-right {
+  padding-right: 3rem;
+}
+
+.office-right .office-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  width: 390px;
+  align-self: center;
+  justify-self: auto;
+}
+.office-card h6 {
+  color: #272443;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 2.5rem;
+}
+.office-card p {
+  font-size: 16px;
+  padding: 1rem 0;
+}
+.office-card button {
+  border: none;
+  background: #272443;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: ease 300ms;
+}
+.office-card button:hover {
+  background: #da392b;
+  transition: ease-in-out all 300ms;
+}
+.office-card img {
+  margin-top: -6.5rem;
+}
+@media screen and (max-width: 767px) {
+  .office-content {
+    flex-direction: column;
+    padding: 3.5rem 0;
+  }
+  .office-content h1 {
+    font-size: 30px;
+  }
+  .office-left p {
+    width: 100%;
+  }
+  .office-content .office-left {
+    padding-left: 0;
+  }
+  .office-card button {
+    width: 100%;
+  }
+  .office-right .office-card {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-left: 1rem; */
+  }
+  .office-card img {
+    margin-top: 0;
+  }
+  .office-right {
+    padding-right: 0;
+    margin-top: 2rem;
+  }
+}
